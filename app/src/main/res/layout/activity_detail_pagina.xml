@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.DetailPaginaActivity">
+
+
+    <ImageView
+        android:id="@+id/picture_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/primary"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="La Casa del Tacu Tacu"/>
+
+    <TextView
+        android:id="@+id/direccion_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        tools:text="Jr. Pelotillehue 53-48 Int 84"/>
+
+    <TextView
+        android:id="@+id/telefono_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        tools:text="012242625"/>
+
+    <TextView
+        android:id="@+id/detalle_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        tools:text="Déjese cautivar por el mejor sabor criollo…"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/call_button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Llamar"/>
+    <Button
+        android:id="@+id/email_button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/call_button"
+        android:text="Email"/>
+    <Button
+        android:id="@+id/url_button"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/email_button"
+        android:text="WebSite"/>
+
+    <Button
+        android:id="@+id/sms_button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/url_button"
+        android:text="SMS"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
